@@ -24,6 +24,8 @@ docker compose up -d
 curl -X GET 'http://localhost:9200/_cat/indices?v'
 ```
 
+![Elasticsearch Indices](assets/index_log.png)
+
 ## Testing with simulated NetFlow signals
 
 ```shell
