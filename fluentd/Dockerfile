@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     g++ \
     && rm -rf /var/lib/apt/lists/*
 
-RUN fluent-gem install fluent-plugin-netflow
+RUN fluent-gem install fluent-plugin-netflowipfix
 
 RUN fluent-gem install fluent-plugin-geoip
 
