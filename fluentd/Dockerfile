@@ -18,6 +18,8 @@ RUN fluent-gem install fluent-plugin-netflow
 
 RUN fluent-gem install fluent-plugin-geoip
 
+RUN fluent-gem install fluent-plugin-rewrite-tag-filter
+
 RUN ["gem", "install", "elasticsearch", "--no-document", "--version", "8.19.0"]
 
 RUN ["gem", "install", "fluent-plugin-elasticsearch", "--no-document", "--version", "5.4.3"]
