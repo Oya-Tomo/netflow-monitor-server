@@ -6,6 +6,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     libgeoip-dev \
     libmaxminddb-dev \
+    autoconf \
+    automake \
+    libtool \
+    make \
+    gcc \
+    g++ \
     && rm -rf /var/lib/apt/lists/*
 
 RUN fluent-gem install fluent-plugin-netflow
