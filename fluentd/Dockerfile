@@ -2,6 +2,12 @@ FROM fluent/fluentd:edge-debian
 
 USER root
 
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    libgeoip-dev \
+    libmaxminddb-dev \
+    && rm -rf /var/lib/apt/lists/*
+
 RUN fluent-gem install fluent-plugin-netflow
 
 RUN fluent-gem install fluent-plugin-geoip
