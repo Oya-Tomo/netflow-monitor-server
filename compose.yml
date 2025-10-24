@@ -11,6 +11,7 @@ services:
       - "24224:24224"
       - "24224:24224/udp"
       - "5140:5140/udp"  # NetFlow UDP port
+      - "514:514/udp"  # Syslog UDP port
 
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.17.1
